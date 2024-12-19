@@ -1,0 +1,139 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+    background-color: #eee7e7;
+    padding-bottom: 5rem;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color: #ffffff;
+    padding: 0 6rem;
+    align-items: center;
+    height: 80px;
+}
+
+.logoContainer {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #62c09f;
+}
+
+.logo {
+    height: 80px;
+}
+
+header > button a {
+    color: white;
+    text-decoration: none;
+}
+
+.formSection {
+    text-align: center;
+    padding-top: 2rem;
+
+}
+
+form {
+    width: 60%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: auto;
+    gap: 20px;
+}
+
+form > div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.createBtn {
+    width: 97%;
+}
+
+.createBtn button {
+    width: 48%;
+}
+
+.input {
+    width: 45%;
+}
+
+.deleteBtn {
+    flex-grow: 0.95;
+}
+
+.customerSection {
+    padding: 2rem 6rem;
+    display: flex;
+    justify-content: start;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: stretch;
+
+}
+
+.card {
+    width: 448px;
+    padding: 10px;
+    border-radius: 10px !important;
+}
+
+.cardBtns button {
+    width: 50%;
+}
+
+.error {
+    color: red;
+    font-size: small;
+    width: 48%;
+    margin: auto;
+    border-radius: 4px;
+}
+
+@media screen and (max-width: 780px) {
+    form {
+        width: 70%;
+    }
+
+    .logoContainer {
+        font-size: small;
+
+    }
+
+    header {
+        padding: 0 2rem;
+
+    }
+
+    .customerSection {
+        padding: 2rem 2rem;
+    }
+}
+
+@media screen and (max-width: 605px) {
+    .logoContainer {
+        font-size: 9px;
+    }
+
+    .logo {
+        height: 50px;
+    }
+
+    .customerSection {
+        flex-direction: column;
+    }
+
+    .card {
+        width: auto;
+    }
+
+    .cardBtns button {
+        width: auto;
+    }
+}
